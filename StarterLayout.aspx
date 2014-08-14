@@ -58,6 +58,11 @@
 
 </div>
 
+<!-- Sample device channel panel usage; This means it will show its content when matching the channel -->
+<Publishing:MobilePanel runat="server" IncludedChannels="Default">
+    Show this when the default channel matches.
+</Publishing:MobilePanel> 
+
 <!-- Inline medatadata editing experience; only use column internal name not GUID -->
 <PublishingWebControls:editmodepanel runat="server" id="layouteditmodepanel"> 
 
