@@ -1,0 +1,64 @@
+// Color Variables
+
+$bodyColor: #333;
+
+// String Variables
+
+$bodyFont: arial, sans-serif;
+
+// Grid Variables
+
+$numCol: 3;
+$gutterWidth: 1em;
+$bottomWidth: 1em;
+
+// Mixins
+
+@mixin mquery($size) {
+  @if $size == large {
+    @media (min-width: 58em) { @content; }
+  }
+  @if $size == medium-large {
+    @media (min-width: 50em) { @content; }
+  }    
+  @else if $size == medium {
+    @media (min-width: 46em) { @content; }
+  }
+  @else if $size == medium-small {
+    @media (min-width: 39em) { @content; }
+  }    
+  @else if $size == small {
+    @media (min-width: 35em)  { @content; }
+  }
+}
+
+@mixin grid($col, $lastChild: false) {
+  $colWidth: percentage($col / $numCol);
+  @if $lastChild {
+    width: $colWidth;
+    margin-right: 0;
+  }
+  @else {
+    width: calc(#{$colWidth} - #{$gutterWidth});
+    margin-right: $gutterWidth;    
+  }
+  @extend %grid-display;
+}
+
+// Placeholders
+
+%screen-reader {
+    position: absolute;
+    height: 1px; 
+    width: 1px; 
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+%grid-display {
+    display: inline-block;
+}
+%clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
