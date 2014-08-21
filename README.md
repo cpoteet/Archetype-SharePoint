@@ -17,7 +17,7 @@ Please note that you should only be using the Enterprise Search Center template 
 
 ## SASS
 
-The SASS is also conextualized to SharePoint needs removing Normalize.css and focusing on webparts instead of "components" and layouts instead of "main." I compile all my SASS into the master page gallery as I mention above. If you need help working with SASS and SharePoint [I created a step-by-step guide](http://www.siolon.com/blog/using-sass-with-sharepoint/) to setting it up.
+The SASS is also contextualized to SharePoint needs removing Normalize.css and focusing on webparts instead of "components" and layouts instead of "main." I compile all my SASS into the master page gallery as I mention above. If you need help working with SASS and SharePoint [I created a step-by-step guide](http://www.siolon.com/blog/using-sass-with-sharepoint/) to setting it up.
 
 ## Page Layout
 
