@@ -11,7 +11,9 @@ With the advent of Design Manager, I now store all files in the master page gall
 
 You'll notice that there is only a publishing master page, and that is because I believe [publishing is the only way to go](http://www.siolon.com/blog/the-superiority-of-sharepoint-publishing-sites-over-team-sites/) in SharePoint versions that support it.
 
-If you're careful and intentional, you can resuse one master page for both search and the system master page. You will most likely be hiding the quick launch for search, but that is easy to handle. If you want to reuse it for system, I suggest you start designing your UI as a fluid one and use layouts to make it fixed (fixed widths don't work well at all for system pages). Worst case scenario you can fork the base master page into a search one that removes the quick launch and a system one that is fluid rather than fixed. It simply depends on your project needs.
+If you're careful and intentional, you can resuse one master page for both search and the system master page. You will most likely be hiding the quick launch for search, but that is easy to handle. If you want to reuse it for system, I suggest you start designing your UI as a fluid one and use layouts to make it fixed (fixed widths don't work well at all for system pages). Worst case scenario you can fork the base master page into a search one that removes the quick launch and a system one that is fluid rather than fixed. It simply depends on your project needs. 
+
+Please note that you should only be using the Enterprise Search Center template (if you have that license) since the basic search center has some [weird behavior in the default page](http://blog.drisgill.com/2013/04/sharepoint-2013-standard-search-center-branding.html).
 
 ## SASS
 
