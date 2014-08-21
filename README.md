@@ -27,4 +27,5 @@ The page layout is simply a base to show you what I need on the majority of my l
 * An example of inserting a web part zone into the master page. It is optional.
 * Overwrites the page title using a metadata value.
 * An example of how to reference metadata values without having it turn into a form on edit.
-* Finally and editmodepanel is included to demonstrated an inline metadata editing experience.
+* A Device channel panel is included to show how to use it. However, it cannot be used on web part zones, which in my mind makes it useless.
+* Finally, an editmodepanel is included to demonstrated an inline metadata editing experience.
