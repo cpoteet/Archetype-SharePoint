@@ -168,12 +168,12 @@
 	
 		<asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server"/>
   
-        <!-- Initialize JS here -->
+        <!-- Initialize JS here; Move inline JS to external file for caching before production -->
 
-		<SharePoint:Scriptlink runat="server" Name="~sitecollection/_catalogs/masterpage/jquery.js" Language="javascript"/>
+        <script src="<asp:Literal runat='server' Text='<%$SPUrl:~SiteCollection/_catalogs/masterpage/jquery.js %>' />"></script>
                 	
 		<script>
-		    $(document).ready(function () {
+		    jQuery(document).ready(function ($) {
 
             });
         </script>
