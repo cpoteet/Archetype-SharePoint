@@ -123,8 +123,17 @@
                                                        
                             <asp:ContentPlaceHolder ID="PlaceHolderBreadcrumbs" runat="server">
                                     
-                                <SharePointWebControls:ListSiteMapPath runat="server" SiteMapProviders="SPSiteMapProvider" RenderCurrentNodeAsLink="false" PathSeparator=" &raquo; " CssClass="global-breadcrumbs" NodeStyle-CssClass="global-breadcrumbs-node" CurrentNodeStyle-CssClass="global-breadcrumbs-current" RootNodeStyle-CssClass="global-breadcrumbs-rootnode" NodeImageOffsetX="0" NodeImageOffsetY="289" NodeImageWidth="16" NodeImageHeight="16" NodeImageUrl="/_layouts/15/images/fgimg.png?rev=33" HideInteriorRootNodes="true" SkipLinkText=""/>                                   
-                                
+                                <asp:SiteMapPath runat="server" SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider" 
+                                    RenderCurrentNodeAsLink="false" 
+                                    PathSeparator=" &raquo; " 
+                                    CssClass="global-breadcrumbs"
+                                    NodeStyle-CssClass="global-breadcrumbs-node" 
+                                    CurrentNodeStyle-CssClass="global-breadcrumbs-current" 
+                                    RootNodeStyle-CssClass="global-breadcrumbs-rootnode" 
+                                    HideInteriorRootNodes="true" 
+                                    SkipLinkText="">
+                                </asp:SiteMapPath>
+                                                                
                             </asp:ContentPlaceHolder>
 
                             <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
