@@ -10,8 +10,6 @@
 
     <!-- Stylesheets only necessary for edit mode -->
 	<PublishingWebControls:EditModePanel runat="server">
-		<SharePointWebControls:CssRegistration name="<% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/editmode15.css %>"
-			After="<% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/pagelayouts15.css %>" runat="server"/>
         <SharePointWebControls:CssRegistration name="<% $SPUrl:~sitecollection/_layouts/1033/styles/Themable/forms.css %>"
 			After="<% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/editmode15.css %>" runat="server"/>
 	</PublishingWebControls:EditModePanel>
