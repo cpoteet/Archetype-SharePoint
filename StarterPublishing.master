@@ -135,6 +135,11 @@
                                 </asp:SiteMapPath>
                                                                 
                             </asp:ContentPlaceHolder>
+                            
+						    <div id="notificationArea" class="ms-notif-box"></div>
+							<SharePoint:AjaxDelta id="DeltaPageStatusBar" BlockElement="true" runat="server">
+								<div id="pageStatusBar"></div>
+							</SharePoint:AjaxDelta>
 
                             <asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server" />
 
