@@ -119,22 +119,26 @@
                     
                         </asp:ContentPlaceHolder>
                         
-                        <div class="global-maincontent">
+                        <main class="global-maincontent">
+	                        
+	                        <nav>
                                                        
-                            <asp:ContentPlaceHolder ID="PlaceHolderBreadcrumbs" runat="server">
-                                    
-                                <asp:SiteMapPath runat="server" SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider" 
-                                    RenderCurrentNodeAsLink="false" 
-                                    PathSeparator=" &raquo; " 
-                                    CssClass="global-breadcrumbs"
-                                    NodeStyle-CssClass="global-breadcrumbs-node" 
-                                    CurrentNodeStyle-CssClass="global-breadcrumbs-current" 
-                                    RootNodeStyle-CssClass="global-breadcrumbs-rootnode" 
-                                    HideInteriorRootNodes="true" 
-                                    SkipLinkText="">
-                                </asp:SiteMapPath>
-                                                                
-                            </asp:ContentPlaceHolder>
+	                            <asp:ContentPlaceHolder ID="PlaceHolderBreadcrumbs" runat="server">
+	                                    
+	                                <asp:SiteMapPath runat="server" SiteMapProviders="SPSiteMapProvider,SPXmlContentMapProvider" 
+	                                    RenderCurrentNodeAsLink="false" 
+	                                    PathSeparator=" &raquo; " 
+	                                    CssClass="global-breadcrumbs"
+	                                    NodeStyle-CssClass="global-breadcrumbs-node" 
+	                                    CurrentNodeStyle-CssClass="global-breadcrumbs-current" 
+	                                    RootNodeStyle-CssClass="global-breadcrumbs-rootnode" 
+	                                    HideInteriorRootNodes="true" 
+	                                    SkipLinkText="">
+	                                </asp:SiteMapPath>
+	                                                                
+	                            </asp:ContentPlaceHolder>
+                            
+	                        </nav>
                             
 						    <div id="notificationArea" class="ms-notif-box"></div>
 							<SharePoint:AjaxDelta id="DeltaPageStatusBar" BlockElement="true" runat="server">
@@ -145,7 +149,7 @@
 
                             <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
 
-                        </div>
+                        </main>
 					
 					</div>
 					
